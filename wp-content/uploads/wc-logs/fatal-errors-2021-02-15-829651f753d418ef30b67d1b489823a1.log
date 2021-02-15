@@ -2,3 +2,19 @@
 
 2021-02-15T08:49:57+00:00 CRITICAL syntax error, unexpected '<', expecting end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 78
 
+2021-02-15T14:42:50+00:00 CRITICAL syntax error, unexpected ''</div>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 50
+
+2021-02-15T14:48:18+00:00 CRITICAL syntax error, unexpected '$presentation' (T_VARIABLE), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 51
+
+2021-02-15T16:10:09+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 81
+
+2021-02-15T16:11:15+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 83
+
+2021-02-15T16:11:20+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 83
+
+2021-02-15T16:11:34+00:00 CRITICAL syntax error, unexpected 'add_theme_support' (T_STRING) dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 93
+
+2021-02-15T16:11:37+00:00 CRITICAL syntax error, unexpected 'add_theme_support' (T_STRING) dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 93
+
+2021-02-15T16:12:32+00:00 CRITICAL Cannot redeclare add_theme_support() (previously declared in C:\wamp64\www\WordPress\wp-includes\theme.php:2497) dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 81
+

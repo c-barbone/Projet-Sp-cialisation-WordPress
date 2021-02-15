@@ -61,7 +61,7 @@ function capitaine_register_post_types() {
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor','thumbnail' ),
+        'supports' => array( 'title', 'editor','thumbnail', ),
         'menu_position' => 5, 
         'menu_icon' => 'dashicons-admin-customizer',
 	);
@@ -74,3 +74,7 @@ add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la 
 //================================== Add Logo ===========================================
 
 add_theme_support('custom-logo');
+
+//================================== Add background ===========================================
+
+add_theme_support ('custom-background');

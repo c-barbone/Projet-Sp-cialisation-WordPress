@@ -9,8 +9,8 @@
 		<a href="/" target="blank"><img src="ds" /></a>
 		<a href="/" target="blank"><img src="sdf" /></a>
 	</div> -->
-	<section class="footer ">
-		<div class="container color">
+	<section class="footer colorfooter">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-sm-12">
 					<h4>Nous Joindre:</h4>
