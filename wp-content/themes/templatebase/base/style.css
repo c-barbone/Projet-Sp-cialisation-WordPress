@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*
+Theme Name: Template de base
+
+*/
+
+test{
+
+    color: blue;
+}
+.color{
+
+    background: linear-gradient(180deg, #dddcdd 0%, #ffbeefc9 100%);
+}
