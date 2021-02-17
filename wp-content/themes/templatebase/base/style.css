@@ -20,9 +20,13 @@ Theme Name: Template de base
     font-weight: normal;
 }
 
-.fondslide{
-    
-    background-image: url("images/FontAccueil.png");
+/* ================================================================================== */
+/*************************************** navbar **************************************/
+/* ================================================================================== */
+.bg-light{
+	border-color: transparent !important;
+    background: none !important;
+	padding-top:0%;
 }
 
 .logoagence{
@@ -30,181 +34,147 @@ Theme Name: Template de base
     height: 10px;
 }
 
+	.custom-logo{
+		width: 100px;
+		height: 100px;
+	}
+
 .logomenu{
     width: 100px;
     height: 100px;
 }
 
-.textelogo{
-    font-family: italianaregular;
-    font-size: 50px;
+.tel{
+	font-family: 'Harriet Text Light Italic';
+	font-size: 4vw;
+	color: #0b5963;
 }
+.fab{
+	color: #0b5963;
+}
+@media(max-width:767px){
+	.tel{
+	display: none;
+	}
+}
+	@media(min-width:768px){
+	
+	
+	}
+	@media(min-width:992px){
+	
+	}
+	@media(min-width:1200px){
+	
+	}
+/* ================================================================================== */
+/************************************* end navbar *************************************/
+/* ================================================================================== */
+/* .fondslide{
+    height: 100vh;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+    background: url("images/FontAccueil.png");
+} */
 .colorfooter{
     /* height: 500px; */
     background: linear-gradient(#ffffff 0%, #9ccfdb, #86b4cf);
 }
 
+/* ================================================================================== */
+/************************************** titles ****************************************/
+/* ================================================================================== */
+
+.textlogo{
+	color: #c7c7c7;
+	font-size: 5vw !important;
+	font-family: italianaregular;
+    font-size: 50px;
+}
+.titreaccueil{
+	color: #86B4CF;
+	font-family: italianaregular;
+}
 h3{
     font-family: italianaregular;
 }
+/* ================================================================================== */
+/*********************************** end titles **************************************/
+/* ================================================================================== */
 
+
+/* ================================================================================== */
+/****************************** page home *********************************/
+/* ================================================================================== */
+
+.logo_t{
+	height: auto;
+	width: 220px;
+}
+@media screen and (max-width:730px) {
+	.logo_t{
+		height: 100px;
+		width: 100px;
+		position: relative;
+	}
+}
+@media screen and (min-width: 731px) and (max-width: 1055px){
+	.logo_t{
+		height: 150px;
+		width: 150px;
+		position: relative;
+	}
+}
+
+.textaccueil{
+	color:#c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+}
+
+/* ================================================================================== */
+/**************************** End page home *******************************/
+/* ================================================================================== */
 .paragraphe{
     font-family: Harriet Text Light Italic;
 }
 
- #menuToggle
- {
-   display: block;
-   position: relative;
-   top: 50px;
-   left: 50px;
-   
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #232323;
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: tomato;
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
- /*
-  * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
-   
-   background: #ededed;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
+/* ================================================================================== */
+ /******************************* slider accueil *************************************/
+ /* ================================================================================== */
 
-
-
- /*********************** slider accueil **************************/
  .cr-container{
 	width: 600px;
 	height: 400px;
 	position: relative;
 	margin: 0 auto;
-	overflow: hidden;
+	/* overflow: hidden; */
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
+/* @media(max-width:767px){
+	.cr-container{
+		width: 300px;
+		height: auto;
+	}
+	.cr-bgimg{
+		width: 300px;
+		height: auto;
+	}
+} */
+	/* @media(min-width:768px){
+		.cr-container{
+	display: none;
+	}
+}
+	@media(min-width:992px){
+		.cr-container{
+	display: none;
+	}
+}
+	@media(min-width:1200px){
+		.cr-container{
+	display: block;
+	}
+} */
 .cr-container label{
 	font-style: italic;
 	width: 150px;
@@ -216,7 +186,7 @@ h3{
 	float:left;
 	position: relative;
 	margin-top:350px;
-	z-index: 1000;
+	z-index: 10;
 }
 .cr-container label:before{
 	content:'';
@@ -295,22 +265,6 @@ h3{
 }
 .cr-bgimg div:nth-child(odd) span{
 	left: -150px;
-}
-.cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
-.cr-bgimg div span:nth-child(1){
-	background-image: url(images/1.jpg);
-}
-.cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
-.cr-bgimg div span:nth-child(2){
-	background-image: url(images/2.jpg);
-}
-.cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
-.cr-bgimg div span:nth-child(3){
-	background-image: url(images/3.jpg);
-}
-.cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
-.cr-bgimg div span:nth-child(4){
-	background-image: url(images/4.jpg);
 }
 .cr-bgimg div:nth-child(1) span{
 	background-position: 0px 0px;
@@ -474,3 +428,126 @@ h3{
 		display: none;
 	}
 }
+
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+/* html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+} */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+section, header{
+	display: block;
+}
+
+
+/* General Demo Style */
+
+.slider{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+}
+
+	/* .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
+    .cr-bgimg div span:nth-child(1){
+      background-image: url(images/1.jpg);
+    }
+    .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
+    .cr-bgimg div span:nth-child(2){
+      background-image: url(images/2.jpg);
+    }
+    .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
+    .cr-bgimg div span:nth-child(3){
+      background-image: url(images/3.jpg);
+    }
+    .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
+    .cr-bgimg div span:nth-child(4){
+      background-image: url(images/4.jpg);
+    } */
+/* ================================================================================== */
+ /******************************* end slider accueil *************************************/
+ /* ================================================================================== */
+
+.socialmedia .flex-auto .vertical::before {
+	content: "";
+	height: 90px !important;
+	width: 1px;
+	display: inline-flex;
+	background-color: #0b5963;
+	margin-bottom: 20px;
+	}
+	
+	.socialmedia .flex-auto .vertical {
+	color: #0b5963;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 18px;
+	line-height: 20px;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	margin-top: 10px;
+	}
+	
+	.socialmedia{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	z-index: 5000;
+	right: 20px;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/* background-color: #ffffff85; */
+	padding: 10px 5px;
+	border-radius: 10px;
+	}
+
+	@media(max-width:767px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:768px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:992px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:1200px){
+		.socialmedia{
+		display: block;
+		}
+	}
+		

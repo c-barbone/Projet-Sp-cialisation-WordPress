@@ -9,7 +9,7 @@
 
   <!-- Title and slogan display -->
   <title><?= bloginfo('name');?> - <?= bloginfo('description')?></title>
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -34,55 +34,55 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">
-        <div class="logoagence">
-          <?php the_custom_logo(); ?>
-        </div>
-      </a>
-    <span class="navbar-text d-flex justify-content-center">
-      <!-- <h1 class="mt-3 mr-5">03.84.85.12.34</h1> -->
-    </span>
-
-    <?php $logomenu = get_field("logo_textmenu");
+  <div class="container-fluid">
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <?= the_custom_logo(); ?>
+    <span class="navbar text d-flex justify-content-center"><h1 class="tel">03 84 85 12 34</h1></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <?php $logomenu = get_field("logo_textmenu");
       echo'<img class="img-fluid logomenu" src="'.$logomenu.'">';
       ?>
-
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse left" id="navbarSupportedContent">
-      <center>
-        <p class="navbar-text text-center">
-          <h2 class="nom-menu">burger-café & bar</h2>
-        </p>
-      </center>
-      <div class="container-fluid " id="lolcontainer">
-        <div class="row" id="lolcontent">
-          <ul class="navbar-nav col-6 d-flex justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link text-uppercase active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#apropos">à propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#burgers">Burgers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#bar">bar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#petitdejeuner">petit déjeuner</a>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#evenement">évènement</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#contact">contact</a>
-            </li>
-            </li>
-          </ul>
-        </div>
-      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
   
+  <!--********************* Barre latérale réseaux sociaux********************* -->
+  <!-- ************************************************************************ -->
+  <div class="socialmedia">
+    <div class="flex-auto">
+    <div class="margin-remove-vertical">
+           <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> 
+      </div>
+      <div class="margin-remove-vertical mt-2">
+           <a target="_blank" href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a> 
+      </div>  
+      <div class="margin-remove-vertical mt-2">
+           <a target="_blank" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a> 
+      </div>
+      <div class="margin-remove-vertical mt-2">
+           <a target="_blank" href="https://www.linkedin.com/in/camille-barbone/"><i class="fab fa-linkedin-in"></i></a> 
+      </div>
+      <div class="margin-remove-vertical mt-2">
+           <a target="_blank" href="https://vimeo.com/fr"><i class="fab fa-vimeo-v"></i></a> 
+      </div>
+      <div class="margin">
+        <div class="tm-rotate-180 vertical mt-3">Retrouvez nous ici</div>
+      </div>
+    </div>
+  </div>

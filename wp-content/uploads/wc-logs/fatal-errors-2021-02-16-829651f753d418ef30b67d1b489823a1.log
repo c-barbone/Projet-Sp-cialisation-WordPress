@@ -1,0 +1,50 @@
+2021-02-16T14:41:01+00:00 CRITICAL syntax error, unexpected '$', expecting '{' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 87
+
+2021-02-16T14:43:01+00:00 CRITICAL syntax error, unexpected ''custom-background'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 86
+
+2021-02-16T14:45:01+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 87
+
+2021-02-16T14:45:58+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 87
+
+2021-02-16T14:46:01+00:00 CRITICAL syntax error, unexpected 'defaults' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\functions.php à la ligne 87
+
+2021-02-16T15:00:35+00:00 CRITICAL Uncaught Error: Call to undefined function the_custom_backgound() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\header.php:39
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template.php(730): require_once()
+#1 C:\wamp64\www\WordPress\wp-includes\template.php(676): load_template('C:\\wamp64\\www\\W...', true, Array)
+#2 C:\wamp64\www\WordPress\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php(3): get_header()
+#4 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\W...')
+#5 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#6 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#7 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\header.php à la ligne 39
+
+2021-02-16T15:01:37+00:00 CRITICAL Uncaught Error: Call to undefined function custom_backgound() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\header.php:39
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template.php(730): require_once()
+#1 C:\wamp64\www\WordPress\wp-includes\template.php(676): load_template('C:\\wamp64\\www\\W...', true, Array)
+#2 C:\wamp64\www\WordPress\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php(3): get_header()
+#4 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\W...')
+#5 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#6 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#7 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\header.php à la ligne 39
+
+2021-02-16T18:44:47+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 27
+
+2021-02-16T18:46:06+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 137
+
+2021-02-16T19:06:27+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 26
+
+2021-02-16T19:43:00+00:00 CRITICAL syntax error, unexpected '':checked ~ .cr-bgimg,' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 23
+
+2021-02-16T19:43:35+00:00 CRITICAL syntax error, unexpected '':checked ~ .cr-bgimg,' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 23
+
+2021-02-16T19:46:14+00:00 CRITICAL syntax error, unexpected '':checked .cr-bgimg,' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 23
+
+2021-02-16T19:46:37+00:00 CRITICAL syntax error, unexpected '':checked ~ .cr-bgimg,' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 23
+
+2021-02-16T19:49:22+00:00 CRITICAL syntax error, unexpected '':checked ~ .cr-bgimg,' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_accueil.php à la ligne 23
+

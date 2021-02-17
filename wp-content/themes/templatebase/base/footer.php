@@ -9,8 +9,7 @@
 		<a href="/" target="blank"><img src="ds" /></a>
 		<a href="/" target="blank"><img src="sdf" /></a>
 	</div> -->
-	<section class="footer colorfooter">
-		<div class="container">
+		<div class="container-fluid colorfooter">
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-sm-12">
 					<h4>Nous Joindre:</h4>
@@ -44,10 +43,8 @@
 					</div>
 				</div>
 		</div>
-	</section>
 </footer>
 </div>
-<?php wp_footer(); ?>
 </body>
 
 </html>
