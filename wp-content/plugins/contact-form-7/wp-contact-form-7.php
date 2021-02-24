@@ -10,6 +10,7 @@ Domain Path: /languages/
 Version: 5.3.2
 */
 
+
 define( 'WPCF7_VERSION', '5.3.2' );
 
 define( 'WPCF7_REQUIRED_WP_VERSION', '5.4' );
@@ -68,3 +69,4 @@ define( 'WPCF7_PLUGIN_URL',
 );
 
 require_once WPCF7_PLUGIN_DIR . '/load.php';
+

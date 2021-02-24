@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content=" Bienvenue dans notre Agence web éco fiendly">
 
   <!-- Title and slogan display -->
@@ -30,37 +30,34 @@
 
   <!-- Logo tab navigation -->
   <link rel="icon" type="image/png" href="http://localhost/wordpress/wp-content/uploads/2021/02/DdpLogo.png" />
-
 </head>
 
 <body>
-  <div class="container-fluid">
-  <nav class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid containerglobal">
+    <div class="fixed-top">
     <?= the_custom_logo(); ?>
-    <span class="navbar text d-flex justify-content-center"><h1 class="tel">03 84 85 12 34</h1></span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <?php $logomenu = get_field("logo_textmenu");
-      echo'<img class="img-fluid logomenu" src="'.$logomenu.'">';
-      ?>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">A propos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <div class="tel">03 84 85 12 34</div>
+    <button class="logoM"><img class="img-fluid logomenu" src="http://localhost/wordpress/wp-content/uploads/2021/02/MenuLogo.png" alt=""></button>
+  <nav class="navbar">
+    <ul>
+    <?php
+                  wp_nav_menu( array(
+                  'container' =>'nav',
+                  'theme_location' => '',
+                  'menu_id' => '',
+                  'echo' => true,
+                  'before' => '',
+                  'after' => '',
+                  'link_before' => '',
+                  'link_after' => '',
+                  'depth' => 0,
+                  'items_wrap' => '%3$s',
+                  'walker' => '')
+                  );
+                  ?>
+    </ul>
   </nav>
+    </div>
   
   <!--********************* Barre latérale réseaux sociaux********************* -->
   <!-- ************************************************************************ -->

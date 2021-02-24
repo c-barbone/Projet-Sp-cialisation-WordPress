@@ -20,81 +20,16 @@ Theme Name: Template de base
     font-weight: normal;
 }
 
-/* ================================================================================== */
-/*************************************** navbar **************************************/
-/* ================================================================================== */
-.bg-light{
-	border-color: transparent !important;
-    background: none !important;
-	padding-top:0%;
-}
-
-.logoagence{
-    width: 10px;
-    height: 10px;
-}
-
-	.custom-logo{
-		width: 100px;
-		height: 100px;
-	}
-
-.logomenu{
-    width: 100px;
-    height: 100px;
-}
-
-.tel{
-	font-family: 'Harriet Text Light Italic';
-	font-size: 4vw;
-	color: #0b5963;
-}
-.fab{
-	color: #0b5963;
-}
-@media(max-width:767px){
-	.tel{
-	display: none;
-	}
-}
-	@media(min-width:768px){
-	
-	
-	}
-	@media(min-width:992px){
-	
-	}
-	@media(min-width:1200px){
-	
-	}
-/* ================================================================================== */
-/************************************* end navbar *************************************/
-/* ================================================================================== */
-/* .fondslide{
-    height: 100vh;
+/* backgound page accueil */
+.fondslide{
+    min-height: 750px;
 	background-repeat: no-repeat !important;
-	background-attachment: fixed;
     background: url("images/FontAccueil.png");
-} */
-.colorfooter{
-    /* height: 500px; */
-    background: linear-gradient(#ffffff 0%, #9ccfdb, #86b4cf);
 }
 
 /* ================================================================================== */
 /************************************** titles ****************************************/
 /* ================================================================================== */
-
-.textlogo{
-	color: #c7c7c7;
-	font-size: 5vw !important;
-	font-family: italianaregular;
-    font-size: 50px;
-}
-.titreaccueil{
-	color: #86B4CF;
-	font-family: italianaregular;
-}
 h3{
     font-family: italianaregular;
 }
@@ -104,79 +39,387 @@ h3{
 
 
 /* ================================================================================== */
-/****************************** page home *********************************/
+/*************************************** navbar **************************************/
 /* ================================================================================== */
+.tel{
+	font-family: 'Harriet Text Light Italic';
+	font-size: 3vw;
+	color: #0b5963;
+	left: 40%;
+	margin-top: 5%;
+	z-index: 1000;
+	position: absolute;
+}
+
+.containerglobal{
+	padding:0%;
+	overflow: hidden;
+}
+	.custom-logo{
+		position: absolute;
+		z-index: 1000;
+		width: 150px;
+		height: auto;
+	}
+
+/* centrage texte menu déroulant */
+* {
+	padding: 0;
+	margin: 0;
+	
+  }
+  
+  .logoM {
+	position: absolute;
+	z-index: 1000;
+	right: 20px;
+	width: 150px;
+	height: auto;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	background-size: 100%;
+  }
+  
+  .navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	color: white;
+	/* hide the menu above the screen by default */
+	transform: translateY(-100%);
+	/* transition adds a little animation when sliding in and out the menu */
+	transition: transform 0.2s ease;
+  }
+  
+  .showNav {
+	/* show the menu */
+	transform: translateY(0);
+  }
+  
+  /* basic nav styling below */
+  
+  .navbar ul {
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	text-align: center;
+	overflow: auto;
+  }
+  
+  .navbar ul li a {
+	color: #c7c7c7;
+	text-decoration: none;
+	font-size: 40px;
+	font-family: 'italianaregular';
+	margin-bottom: 30px;
+	line-height: 2;
+  }
+
+  .navbar ul li a:hover{
+	  color: #0b5963;
+  }
+
+  @media(max-width:767px){
+	.tel{
+	display: none;
+	}
+}
+	@media(max-width:414px){
+		.logoM{
+			width: 120px;
+			height: auto;
+		}
+	}
+
+	@media(max-width:280px){
+		.logoM{
+			width: 100px;
+			height: auto;
+		}
+		.custom-logo{
+			width: 100px;
+			height: auto;
+		}
+	}
+	
+	.navbar ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+		text-align: center;
+		overflow: auto;
+	  }
+
+	  @media(max-width:360px){
+		.navbar ul {
+			margin-top: 80px;
+			overflow: auto;	
+		  }
+		  .navbar ul li a {
+			font-size: 30px;
+			margin-bottom: 30px;
+			line-height: 1.5;
+		  }
+	}
+
+	@media(min-width:1024px){
+		.navbar ul {
+			margin-top: 70px;
+			overflow: auto;	
+		  }
+		  .navbar ul li a {
+			font-size: 55px;
+			margin-bottom: 30px;
+			line-height: 1.5;
+		  }
+	}
+
+	@media(max-height:567px){
+
+		  .navbar ul li a {
+			font-size: 20px;
+			margin-bottom: 30px;
+		  }
+		  .menu-menu-principal-container {
+			column-count: 7;
+			margin-top: 50px;
+			text-align: center;
+			overflow: auto;
+		  }
+	}
+
+	@media(max-height:320px){
+
+		.navbar ul li a {
+		  font-size: 18px;
+		  margin-bottom: 30px;
+		}
+  }
+
+	@media(min-height:1024px){
+
+		.navbar ul li a {
+		  font-size: 40px;
+		  margin-bottom: 30px;
+		  line-height: 2;
+		}
+  }
+/* ================================================================================== */
+/************************************* end navbar *************************************/
+/* ================================================================================== */
+
+
+/* ===================================================================================== */
+/**************************** Barre latérale social media *******************************/
+/* ==================================================================================== */
+ .socialmedia .flex-auto .vertical::before {
+	content: "";
+	height: 90px !important;
+	width: 1px;
+	display: inline-flex;
+	background-color: #0b5963;
+	margin-bottom: 20px;
+	}
+	
+	.socialmedia .flex-auto .vertical {
+	color: #0b5963;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 18px;
+	line-height: 20px;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	margin-top: 10px;
+	}
+	
+	.socialmedia{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	z-index: 5000;
+	right: 20px;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/* background-color: #ffffff85; */
+	padding: 10px 5px;
+	border-radius: 10px;
+	}
+
+	.fab{
+		color: #0b5963;
+	}
+
+	@media(max-width:767px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:768px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:992px){
+		.socialmedia{
+		display: none;
+		}
+	}
+		@media(min-width:1200px){
+		.socialmedia{
+		display: block;
+		}
+	}
+
+/* ===================================================================================== */
+/*************************End Barre latérale social media ******************************/
+/* ==================================================================================== */
+
+
+/* ================================================================================== */
+/********************************** page d'accueil ************************************/
+/* ================================================================================== */
+
+.textlogo{
+	color: #c7c7c7;
+	font-size: 5vw !important;
+	font-family: italianaregular;
+    font-size: 50px;
+}
+.titreaccueil1{
+	color: #86B4CF;
+	font-family: italianaregular;
+}
+
+.titreaccueil2{
+	color: #86B4CF;
+	font-family: italianaregular;
+	padding-left: 12%;
+}
 
 .logo_t{
 	height: auto;
 	width: 220px;
 }
-@media screen and (max-width:730px) {
-	.logo_t{
-		height: 100px;
-		width: 100px;
-		position: relative;
+
+.textaccueil1{
+	color:#c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+	padding-right: 25%;
+}
+
+.textaccueil2{
+	color:#c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+	padding-left: 12%;
+	padding-right: 10%;
+}
+
+.textcolor{
+	color: #0b5963;
+}
+.bloctxaccueil{
+	margin: 0%;
+}
+
+.image2{
+	margin-right:25%;
+}
+
+@media screen and (max-width:812px) {
+	.titreaccueil1{
+		text-align: center;
+	}
+	.textaccueil1{
+		text-align: center;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.textaccueil2{
+		text-align: center;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.image2{
+		margin-right:0%;
 	}
 }
-@media screen and (min-width: 731px) and (max-width: 1055px){
+@media screen and (min-width: 769px) and (max-width: 1023px){
+	.textaccueil2{
+		padding-left: 10%;
+		margin-right: 4%;
+	}
+	.titreaccueil2{
+		padding-left:0%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px){
 	.logo_t{
-		height: 150px;
+		height: auto;
 		width: 150px;
 		position: relative;
 	}
+	.titreaccueil2{
+		padding-left: 0%;
+		text-align: center;
+		font-size: 25px;
+		
+	}
 }
 
-.textaccueil{
-	color:#c7c7c7;
-	font-family: 'Harriet Text Light Italic';
+@media screen and (max-width: 730px){
+	.logo_t{
+		height: auto;
+		width: 80px;
+		position: relative;
+	}	
 }
 
 /* ================================================================================== */
-/**************************** End page home *******************************/
+/******************************** End page d'accueil **********************************/
 /* ================================================================================== */
-.paragraphe{
-    font-family: Harriet Text Light Italic;
+
+
+/* ================================================================================== */
+/********************************* slider accueil *************************************/
+/* ================================================================================== */
+
+
+.slider{
+	width: 100%;
+	text-align: center;
+}
+.slidermobile{
+	display: none;
 }
 
-/* ================================================================================== */
- /******************************* slider accueil *************************************/
- /* ================================================================================== */
-
- .cr-container{
+.cr-container{
 	width: 600px;
 	height: 400px;
 	position: relative;
 	margin: 0 auto;
-	/* overflow: hidden; */
+	overflow: hidden;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+	
 }
-/* @media(max-width:767px){
-	.cr-container{
-		width: 300px;
-		height: auto;
-	}
-	.cr-bgimg{
-		width: 300px;
-		height: auto;
-	}
-} */
-	/* @media(min-width:768px){
-		.cr-container{
-	display: none;
-	}
-}
-	@media(min-width:992px){
-		.cr-container{
-	display: none;
-	}
-}
-	@media(min-width:1200px){
-		.cr-container{
-	display: block;
-	}
-} */
 .cr-container label{
-	font-style: italic;
+	font-family: 'Harriet Text Light Italic';
 	width: 150px;
 	height: 30px;
 	cursor: pointer;
@@ -192,7 +435,7 @@ h3{
 	content:'';
 	width: 34px;
 	height: 34px;
-	background: rgba(130,195,217,0.9);
+	background: #9CCFDB;
 	position: absolute;
 	left: 50%;
 	margin-left: -17px;
@@ -218,24 +461,25 @@ h3{
 .cr-container label.cr-label-img-4:after{
 	width: 0px;
 }
+
 .cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1,
 .cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2,
 .cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3,
 .cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4{
-	color: #68abc2;
+	color: #9CCFDB;
 }
 .cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1:before,
 .cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2:before,
 .cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3:before,
 .cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4:before{
 	background: #fff;
-	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+	box-shadow: 0px 0px 0px 4px #9ccfdbb2;
 }
 .cr-container input{
 	display: none;
 }
 .cr-bgimg{
-	width: 600px;
+	width: 100% !important;
 	height: 400px;
 	position: absolute;
 	left: 0px;
@@ -245,6 +489,8 @@ h3{
 .cr-bgimg{
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	width:100%;
+	
 }
 .cr-bgimg div{
 	width: 150px;
@@ -254,6 +500,7 @@ h3{
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
+
 .cr-bgimg div span{
 	position: absolute;
 	width: 100%;
@@ -356,7 +603,7 @@ h3{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 .cr-titles h3 span{
-	z-index: 10000;
+	z-index: 100;
 	position: absolute;
 	width: 100%;
 	left: 0px;
@@ -366,9 +613,9 @@ h3{
 }
 .cr-titles h3 span:nth-child(1){
 	left: 0px;
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	font-size: 70px;
-	letter-spacing: 7px;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 60px;
+	text-shadow: 1px 1px 8px #0b5963;
 	-webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
 	-moz-transition: opacity 0.8s ease-in-out, -moz-transform 0.8s ease-in-out;
 	-o-transition: opacity 0.8s ease-in-out, -o-transform 0.8s ease-in-out;
@@ -377,8 +624,7 @@ h3{
 }
 .cr-titles h3 span:nth-child(2){
 	margin-top: 84px;
-	letter-spacing: 0px;
-	background: rgba(104,171,194,0.9);
+	background: #9ccfdbb2;
 	font-size: 14px;
 	padding: 10px 0px;
 	font-style: italic;
@@ -390,6 +636,13 @@ h3{
 	-ms-transition: opacity 0.8s ease-in-out;
 	transition: opacity 0.8s ease-in-out;
 }
+
+@media(max-width:767px){
+	.cr-titles h3 span:nth-child(1){
+		font-size: 50px;
+	}
+}
+
 .cr-container input:checked ~ .cr-titles h3 span:nth-child(1){
 	opacity: 0;
 	-webkit-transform: scale(0.5);
@@ -415,8 +668,34 @@ h3{
 .cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(2){
 	opacity: 1;
 }
+
+h2 { 
+	margin:0;
+	padding:0;
+}
+
+/* slider mobile */
+.carousel-indicators li{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 100%;
+    background-color:#c7c7c7;
+	margin-top: 5%;
+}
+
+.carousel-indicators{
+	position: relative !important;
+	justify-content: flex-end;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.texteslider{
+	z-index: 10000;
+}
+
 /* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
 	.cr-container input{
 		display: inline;
 		width: 24%;
@@ -429,125 +708,508 @@ h3{
 	}
 }
 
-/* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
+@media screen and (max-width: 823px) {
+
+	.cr-container {
+		display: none;
+	}
+	.slidermobile{
+		display: block;
+		margin-top: 20%;
+	}
 }
-/* html,body {
-	margin:0;
-	padding:0;
-	height: 100%;
+
+/* ===================================================================================== */
+ /******************************* end slider accueil *************************************/
+ /* ==================================================================================== */
+
+
+/* ==================================================================================== */
+/************************************* Page agence **************************************/
+/* ==================================================================================== */
+
+.logofiendly{
+	width: 120px;
+	height: auto;
+}
+
+.descriptifagence{
+
+	font-family: 'Harriet Text Light Italic';
+	color: #c7c7c7;
+	font-size: 20px;
+	
+}
+/* .triangleb{
+	display : inline-block;
+	height : 0;
+	width : 0;
+	border-right : 280px solid transparent;
+	border-bottom : 280px solid #86b4cf50;
+	position: absolute;
+	left: 17%;
+}
+.triangleh{
+	display : inline-block;
+	height : 0;
+	width : 0;
+	border-top : 280px solid #9ed0dc52;
+	border-left : 280px solid transparent;
+	position:absolute;
+	left: 63%;
 } */
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img { 
-	border:0;
-}
-address,caption,cite,code,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-ol,ul {
-	list-style:none;
-}
-caption,th {
-	text-align:left;
-}
 
-q:before,q:after {
-	content:'';
+.titre_pagea{
+	font-family: 'italianaregular';
+	font-size: 50px;
+	color: #c7c7c7;
 }
-abbr,acronym { border:0;
-}
-section, header{
-	display: block;
-}
+/* ==================================================================================== */
+/*********************************** End Page agence ************************************/
+/* ==================================================================================== */
 
 
-/* General Demo Style */
+/* ==================================================================================== */
+/************************************* Hover équipe *************************************/
+/* ==================================================================================== */
 
-.slider{
-	width: 100%;
-	height: 100vh;
-	position: relative;
+	 .view {
+		width: 300px;
+		height: 200px;
+		margin: 10px;
+		float: left;
+		border: 10px solid #fff;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		-webkit-box-shadow: 1px 1px 2px #c7c7c7;
+		-moz-box-shadow: 1px 1px 2px #c7c7c7;
+		box-shadow: 1px 1px 2px #c7c7c7;
+		cursor: default;
+	 }
+	 .view .mask {
+		width: 300px;
+		height: 200px;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+	 }
+	 .view img {
+		display: block;
+		position: relative;
+	 }
+	 .view h2 {
+		font-family: 'Harriet Text Light Italic';
+		color: #fff;
+		text-align: center;
+		position: relative;
+		font-size: 20px;
+		
+		
+	 }
+	 .view p {
+		font-family: 'Harriet Text Light Italic';
+		font-size: 16px;
+		position: relative;
+		color: #fff;
+		padding: 10px 20px 20px;
+		text-align: center;
+	 }
+	 
+	 
+		 .view-sixth img {
+		-webkit-transition: all 0.4s ease-in-out 0.5s;
+		-moz-transition: all 0.4s ease-in-out 0.5s;
+		-o-transition: all 0.4s ease-in-out 0.5s;
+		-ms-transition: all 0.4s ease-in-out 0.5s;
+		transition: all 0.4s ease-in-out 0.5s;
+	 }
+	 .view-sixth .mask {
+		background-color: #86b4cf94;
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-in 0.4s;
+		-moz-transition: all 0.3s ease-in 0.4s;
+		-o-transition: all 0.3s ease-in 0.4s;
+		-ms-transition: all 0.3s ease-in 0.4s;
+		transition: all 0.3s ease-in 0.4s;
+	 }
+
+	 .view-sixth h2 {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		background: transparent;
+		margin-top: 15px;
+		margin-right: 15px;
+		-webkit-transform: scale(10);
+		-moz-transform: scale(10);
+		-o-transform: scale(10);
+		-ms-transform: scale(10);
+		transform: scale(10);
+		-webkit-transition: all 0.3s ease-in-out 0.1s;
+		-moz-transition: all 0.3s ease-in-out 0.1s;
+		-o-transition: all 0.3s ease-in-out 0.1s;
+		-ms-transition: all 0.3s ease-in-out 0.1s;
+		transition: all 0.3s ease-in-out 0.1s;
+	 }
+	 .view-sixth p {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		-webkit-transform: scale(10);
+		-moz-transform: scale(10);
+		-o-transform: scale(10);
+		-ms-transform: scale(10);
+		transform: scale(10);
+		-webkit-transition: all 0.3s ease-in-out 0.2s;
+		-moz-transition: all 0.3s ease-in-out 0.2s;
+		-o-transition: all 0.3s ease-in-out 0.2s;
+		-ms-transition: all 0.3s ease-in-out 0.2s;
+		transition: all 0.3s ease-in-out 0.2s;
+		border-bottom: 1px solid #ffffff4d;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	 }
+	 .view-sixth a.info {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+		-webkit-transform: translateY(100px);
+		-moz-transform: translateY(100px);
+		-o-transform: translateY(100px);
+		-ms-transform: translateY(100px);
+		transform: translateY(100px);
+		-webkit-transition: all 0.3s ease-in-out 0.1s;
+		-moz-transition: all 0.3s ease-in-out 0.1s;
+		-o-transition: all 0.3s ease-in-out 0.1s;
+		-ms-transition: all 0.3s ease-in-out 0.1s;
+		transition: all 0.3s ease-in-out 0.1s;
+		color:#ffffff;
+		font-family: 'Harriet Text Light Italic';
+		margin-right: 15px;
+	 }
+
+	 .view-sixth:hover .mask {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		-webkit-transition-delay: 0s;
+		-moz-transition-delay: 0s;
+		-o-transition-delay: 0s;
+		-ms-transition-delay: 0s;
+		transition-delay: 0s;
+	 }
+	 .view-sixth:hover img {
+		-webkit-transition-delay: 0s;
+		-moz-transition-delay: 0s;
+		-o-transition-delay: 0s;
+		-ms-transition-delay: 0s;
+		transition-delay: 0s;
+	 }
+	 .view-sixth:hover h2 {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition-delay: 0.1s;
+		-moz-transition-delay: 0.1s;
+		-o-transition-delay: 0.1s;
+		-ms-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+	 }
+	 .view-sixth:hover p {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition-delay: 0.2s;
+		-moz-transition-delay: 0.2s;
+		-o-transition-delay: 0.2s;
+		-ms-transition-delay: 0.2s;
+		transition-delay: 0.2s;
+	 }
+	 .view-sixth:hover a.info {
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-o-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		transform: translateY(0px);
+		-webkit-transition-delay: 0.3s;
+		-moz-transition-delay: 0.3s;
+		-o-transition-delay: 0.3s;
+		-ms-transition-delay: 0.3s;
+		transition-delay: 0.3s;
+		
+	 }
+
+	 .logolinkedin{
+		 width:5%;
+		 margin-left: 5%;
+	 }
+	 a.info:hover {
+		 color: #0b5963;
+		 text-decoration: none;
+	 }
+
+	 .logolinkedin1{
+		width:5%;
+		margin-left: 5%;
+		margin-top:8%;
+	}
+	.logolinkedin2{
+		width:5%;
+		margin-left: 5%;
+		
+	}
+	.logolinkedin3{
+		width:5%;
+		margin-left: 5%;
+		
+	}
+	.logolinkedin4{
+		width:5%;
+		margin-left: 5%;
+		margin-top:8%;
+	}
+	.logolinkedin5{
+		width:5%;
+		margin-left: 5%;
+		margin-top:8%;
+	}
+/* ==================================================================================== */
+/*********************************** End Hover équipe ***********************************/
+/* ==================================================================================== */
+
+
+/* ==================================================================================== */
+/************************************** Portfolio ***************************************/
+/* ==================================================================================== */
+
+
+img.woocommerce-placeholder.wp-post-image{
+	width: 200px;
+	height: auto;
+}
+
+h2.woocommerce-loop-product__title:hover{
+	background-color: #c7c7c7;
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+	background-size: 50px !important;
+
+}
+h2.woocommerce-loop-product__title{
+	background-color: #c7c7c7;
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+	background-size: 50px !important;
+	font-size: 20px;
+}
+/* supprimer lien titre boutique */
+/* a:link{ 
+ text-decoration:none !important; 
+}  */
+
+.entry-content{
+	align-items: center;
+	column-count: 3;
+}
+
+ul.products.columns-4{
+	list-style-type: none;
+}
+li.product.type-product{
+	width: 150px;
+}
+
+/* #sidebar{
+	display: none;
+	} */
+	#sidebar-before-front-page {
+		width: 359px;
+		padding-left:4px;
+		/* float:right; */
+		
+		left: 70%;
+		top: 30%;
+		}
+
+/* ==================================================================================== */
+/************************************ End Portfolio *************************************/
+/* ==================================================================================== */
+
+
+/* ==================================================================================== */
+/**************************************** Blog ******************************************/
+/* ==================================================================================== */
+
+section.blog{
+	margin-top: 20%;
+}
+
+.wp-post-image{
+	width: 500px;
+	height: auto;
+}
+
+.titlebox.unbuntuItalic{
+	font-family: 'italianaregular';
+	color: #0b5963;
+	margin: 10px;
+	font-size: 35px;
 	text-align: center;
 }
 
-	/* .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
-    .cr-bgimg div span:nth-child(1){
-      background-image: url(images/1.jpg);
-    }
-    .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
-    .cr-bgimg div span:nth-child(2){
-      background-image: url(images/2.jpg);
-    }
-    .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
-    .cr-bgimg div span:nth-child(3){
-      background-image: url(images/3.jpg);
-    }
-    .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
-    .cr-bgimg div span:nth-child(4){
-      background-image: url(images/4.jpg);
-    } */
-/* ================================================================================== */
- /******************************* end slider accueil *************************************/
- /* ================================================================================== */
+.entry{
+	font-family: 'Harriet Text Light Italic';
+	color: #0b5963;
+	text-align: center;
+}
 
-.socialmedia .flex-auto .vertical::before {
-	content: "";
-	height: 90px !important;
-	width: 1px;
-	display: inline-flex;
-	background-color: #0b5963;
-	margin-bottom: 20px;
-	}
-	
-	.socialmedia .flex-auto .vertical {
+.texteblog{
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.iconeblog{
+	color: #c7c7c7;
+}
+
+small.date{
+	color: #c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 15px;
+}
+
+p.postmetadata{
+	color: #c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 15px;
+}
+
+p.postmetadata>a{
+	text-decoration: none;
 	color: #0b5963;
 	font-family: 'Harriet Text Light Italic';
-	font-size: 18px;
-	line-height: 20px;
-	-webkit-writing-mode: vertical-lr;
-	writing-mode: vertical-lr;
-	font-weight: 400;
-	letter-spacing: 1.2px;
-	margin-top: 10px;
-	}
-	
-	.socialmedia{
-	display: flex;
-	flex-wrap: wrap;
-	position: fixed;
-	z-index: 5000;
-	right: 20px;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	/* background-color: #ffffff85; */
-	padding: 10px 5px;
-	border-radius: 10px;
-	}
+	font-size: 15px;
+}
+p.postmetadata>a:hover{
+	text-decoration: none;
+	color: #86B4CF;
+}
 
-	@media(max-width:767px){
-		.socialmedia{
-		display: none;
-		}
-	}
-		@media(min-width:768px){
-		.socialmedia{
-		display: none;
-		}
-	}
-		@media(min-width:992px){
-		.socialmedia{
-		display: none;
-		}
-	}
-		@media(min-width:1200px){
-		.socialmedia{
-		display: block;
-		}
-	}
-		
+a.more-link{
+	color: #0b5963;
+	text-align: end !important;
+}
+a.more-link>span{
+	color: #0b5963;
+	text-align: end !important;
+	
+}
+
+a.more-link:hover{
+	text-decoration: none;
+	color: #86B4CF;
+}
+
+
+/* .blog{
+min-height: 100vh;
+background-color:rgba(255, 255, 255, 0.3);
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.blogarticle{
+margin-top: 30px;
+}
+.blogtitle{
+text-align: center;
+background-color: black;
+color: white;
+font-size: 25px;
+
+}
+
+.date{
+font-size: 10px;
+color: gray;
+}
+
+.entry > p{
+font-family: 'ubuntulight';
+} */
+/* ==================================================================================== */
+/************************************** End Blog ****************************************/
+/* ==================================================================================== */
+
+/* ==================================================================================== */
+/*************************************** Footer *****************************************/
+/* ==================================================================================== */
+
+.colorfooter{
+    background: linear-gradient(#ffffff 0%, #9ccfdb, #86b4cf);
+}
+
+.titrefooter{
+	font-size: 24px;
+	font-family: 'italianaregular';
+	color: #ffffff;
+}
+
+.blockfooter{
+	padding-top: 10%;
+	padding-left: 10px;
+}
+
+.logofooter{
+	color: #ffffff;
+}
+
+.basfoot{
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+}
+
+.textefooter{
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+}
+
+/* ==================================================================================== */
+/************************************* End Footer ***************************************/
+/* ==================================================================================== */
+
+
+/* ==================================================================================== */
+/************************************* Panier ***************************************/
+/* ==================================================================================== */
+
+main#content{
+	margin-top: 500px !important;
+	
+}
+
+/* ==================================================================================== */
+/************************************* End Panier ***************************************/
+/* ==================================================================================== */
+
+
+
+
+

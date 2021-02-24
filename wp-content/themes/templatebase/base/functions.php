@@ -83,21 +83,4 @@ add_action('after_setup_theme','wpc_theme_support');
 
 //================================== Add background ===========================================
 
-add_theme_support(
-    'custom-background',
-    array(
-        'default-color' => 'd1e4dd',
-    )
-);
-
-// Editor color palette.
-$black     = '#000000';
-$dark_gray = '#28303D';
-$gray      = '#39414D';
-$green     = '#D1E4DD';
-$blue      = '#D1DFE4';
-$purple    = '#D1D1E4';
-$red       = '#E4D1D1';
-$orange    = '#E4DAD1';
-$yellow    = '#EEEADD';
-$white     = '#FFFFFF';
+add_theme_support( 'custom-background' );
