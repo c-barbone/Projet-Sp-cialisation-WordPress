@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center rowagence">
       <?php $logo = get_field("logo_pagea");
         echo'<img class="img-fluid logofiendly" src="'.$logo.'">';
         ?>

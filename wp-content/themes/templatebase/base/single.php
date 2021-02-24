@@ -30,5 +30,9 @@ if ( $post_type!='product' ) { ?>
 </div>
 </div>
 </div>
-<?php dynamic_sidebar( 'nouvelle-zone' ); ?>
+
+<?php
+if ( $post_type!='product' ) {
+dynamic_sidebar( 'nouvelle-zone' );
+} ?>
 <?php get_footer(); ?>

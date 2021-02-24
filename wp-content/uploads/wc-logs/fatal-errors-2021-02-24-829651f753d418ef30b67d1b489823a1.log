@@ -1,0 +1,57 @@
+2021-02-24T08:08:07+00:00 CRITICAL Uncaught Error: Call to undefined function is_blog() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php:34
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#2 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#3 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 34
+
+2021-02-24T08:08:29+00:00 CRITICAL Uncaught Error: Call to undefined function is_article() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php:34
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#2 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#3 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 34
+
+2021-02-24T08:08:50+00:00 CRITICAL Uncaught Error: Call to undefined function get_article() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php:34
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#2 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#3 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 34
+
+2021-02-24T08:09:07+00:00 CRITICAL Uncaught Error: Call to undefined function get_article() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php:34
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#2 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#3 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 34
+
+2021-02-24T08:09:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_article() in C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php:34
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\WordPress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\W...')
+#2 C:\wamp64\www\WordPress\index.php(17): require('C:\\wamp64\\www\\W...')
+#3 {main}
+  thrown dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 34
+
+2021-02-24T08:10:37+00:00 CRITICAL syntax error, unexpected end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 36
+
+2021-02-24T09:43:20+00:00 CRITICAL Uncaught Error: Call to undefined function wpcf7_messages() in C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form.php:885
+Stack trace:
+#0 C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form.php(168): WPCF7_ContactForm->upgrade()
+#1 C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form.php(123): WPCF7_ContactForm->__construct(Object(WP_Post))
+#2 C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form-functions.php(4): WPCF7_ContactForm::get_instance(Object(WP_Post))
+#3 C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form-functions.php(126): wpcf7_contact_form(32)
+#4 C:\wamp64\www\WordPress\wp-includes\shortcodes.php(343): wpcf7_contact_form_tag_func(Array, '', 'contact-form-7')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\WordPress\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(contac...', 'do_shortcode_ta...', '\n<div class="wp...')
+#7 C: dans C:\wamp64\www\WordPress\wp-content\plugins\contact-form-7\includes\contact-form.php à la ligne 885
+
+2021-02-24T20:39:36+00:00 CRITICAL syntax error, unexpected ''coucou'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\woocommerce\loop\price.php à la ligne 26
+
+2021-02-24T22:30:46+00:00 CRITICAL syntax error, unexpected '<' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\archive.php à la ligne 22
+

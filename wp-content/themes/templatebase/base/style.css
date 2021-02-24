@@ -46,7 +46,7 @@ h3{
 	font-size: 3vw;
 	color: #0b5963;
 	left: 40%;
-	margin-top: 5%;
+	margin-top: 4%;
 	z-index: 1000;
 	position: absolute;
 }
@@ -79,6 +79,9 @@ h3{
 	cursor: pointer;
 	background-color: transparent;
 	background-size: 100%;
+  }
+  .logoM:focus {
+	outline-style: none;
   }
   
   .navbar {
@@ -728,6 +731,9 @@ h2 {
 /************************************* Page agence **************************************/
 /* ==================================================================================== */
 
+.rowagence{
+	margin-top: 150px;
+}
 .logofiendly{
 	width: 120px;
 	height: auto;
@@ -738,6 +744,7 @@ h2 {
 	font-family: 'Harriet Text Light Italic';
 	color: #c7c7c7;
 	font-size: 20px;
+	margin-top: 50px;
 	
 }
 /* .triangleb{
@@ -764,6 +771,14 @@ h2 {
 	font-size: 50px;
 	color: #c7c7c7;
 }
+
+
+@media screen and (max-width: 414px) {
+	.rowagence{
+		margin-top: 200px;
+	}		
+}
+
 /* ==================================================================================== */
 /*********************************** End Page agence ************************************/
 /* ==================================================================================== */
@@ -990,6 +1005,14 @@ h2 {
 		margin-left: 5%;
 		margin-top:8%;
 	}
+
+.statutentreprise{
+	position: relative;
+}
+
+.nom{
+	position: relative;
+}
 /* ==================================================================================== */
 /*********************************** End Hover équipe ***********************************/
 /* ==================================================================================== */
@@ -1000,53 +1023,7 @@ h2 {
 /* ==================================================================================== */
 
 
-img.woocommerce-placeholder.wp-post-image{
-	width: 200px;
-	height: auto;
-}
 
-h2.woocommerce-loop-product__title:hover{
-	background-color: #c7c7c7;
-	color: #ffffff;
-	font-family: 'Harriet Text Light Italic';
-	background-size: 50px !important;
-
-}
-h2.woocommerce-loop-product__title{
-	background-color: #c7c7c7;
-	color: #ffffff;
-	font-family: 'Harriet Text Light Italic';
-	background-size: 50px !important;
-	font-size: 20px;
-}
-/* supprimer lien titre boutique */
-/* a:link{ 
- text-decoration:none !important; 
-}  */
-
-.entry-content{
-	align-items: center;
-	column-count: 3;
-}
-
-ul.products.columns-4{
-	list-style-type: none;
-}
-li.product.type-product{
-	width: 150px;
-}
-
-/* #sidebar{
-	display: none;
-	} */
-	#sidebar-before-front-page {
-		width: 359px;
-		padding-left:4px;
-		/* float:right; */
-		
-		left: 70%;
-		top: 30%;
-		}
 
 /* ==================================================================================== */
 /************************************ End Portfolio *************************************/
@@ -1057,9 +1034,26 @@ li.product.type-product{
 /**************************************** Blog ******************************************/
 /* ==================================================================================== */
 
-section.blog{
-	margin-top: 20%;
+.site-content{
+	margin-top: 15%;
+	flex-direction: row;
 }
+
+.titreblog{
+	text-align: center;
+	font-family: 'italianaregular';
+	font-size: 50px ;
+	color: #86B4CF;
+	margin-bottom: 50px;
+}
+
+.blockarticle{
+	margin-right: 0% !important;
+}
+
+/* .barrelatérale{
+	width: 200px;
+} */
 
 .wp-post-image{
 	width: 500px;
@@ -1128,35 +1122,274 @@ a.more-link:hover{
 }
 
 
-/* .blog{
-min-height: 100vh;
-background-color:rgba(255, 255, 255, 0.3);
-margin-top: 20px;
-margin-bottom: 20px;
+@media screen and (max-width: 823px) {
+	.site-content{
+		margin-top: 30%;
+	}
 }
-
-.blogarticle{
-margin-top: 30px;
+@media screen and (max-width: 414px) {
+	.site-content{
+		margin-top: 50%;
+	}
+	.titreblog{
+		font-size: 40px
+	}
+	.entry{
+		font-size: 10px;
+	}
+	.titlebox.unbuntuItalic{
+		font-size: 30px;
+	}
+	.postmetadata{
+		/* display: none; */
+	}
+	.iconeblog{
+		/* display: none; */
+	}
 }
-.blogtitle{
-text-align: center;
-background-color: black;
-color: white;
-font-size: 25px;
-
-}
-
-.date{
-font-size: 10px;
-color: gray;
-}
-
-.entry > p{
-font-family: 'ubuntulight';
-} */
 /* ==================================================================================== */
 /************************************** End Blog ****************************************/
 /* ==================================================================================== */
+
+
+/* ==================================================================================== */
+/************************************* Boutique ***************************************/
+/* ==================================================================================== */
+h1.entry-title{
+	display: none;
+}
+/* .wp-post-image{
+	display: none;
+} 		POUR SUPPRIMER IMAGES BOUTIQUE MAIS SUPPRIME AUSSI IMAGE BLOG!!!!*/
+
+.produits{
+	background: #c7c7c7;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 20px;
+	margin-top: 100px;
+	width: 300px;
+	height: 300px;
+	margin: 30px;
+}
+h2.woocommerce-loop-product__title:hover{
+	background-color: #c7c7c7;
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+	background-size: 50px;
+
+}
+h2.woocommerce-loop-product__title{
+	background-color: #c7c7c7;
+	color: #ffffff;
+	font-family: 'Harriet Text Light Italic';
+	background-size: 50px !important;
+	font-size: 20px;
+	justify-content: center !important;
+} 
+
+.rowproduits{
+	justify-content: center;
+	align-items: center;
+}
+
+.margeproduit{
+	margin-right: 100px;
+}
+/* img.woocommerce-placeholder.wp-post-image{
+	width: 200px;
+	height: auto;
+}
+
+*/
+/* supprimer lien titre boutique */
+/* a:link{ 
+ text-decoration:none !important; 
+}  */
+
+/* .entry-content{
+	align-items: center;
+	column-count: 3;
+}
+
+ul.products.columns-4{
+	list-style-type: none;
+}
+li.product.type-product{
+	width: 150px;
+} */
+
+
+	/* #sidebar-before-front-page {
+		width: 359px;
+		padding-left:4px;
+		float:right;
+		
+		left: 70%;
+		top: 30%;
+		} */
+/* ==================================================================================== */
+/************************************ Fin Boutique *************************************/
+/* ==================================================================================== */
+
+
+
+/* ==================================================================================== */
+/************************************* Panier ***************************************/
+/* ==================================================================================== */
+
+article#post-207{
+	margin-top: 200px;
+	
+}
+
+/* ==================================================================================== */
+/************************************* End Panier ***************************************/
+/* ==================================================================================== */
+
+
+
+/* ==================================================================================== */
+/************************************** Contact ****************************************/
+/* ==================================================================================== */
+
+.mapcontact{
+margin-right:0%;
+margin-top: 100px ;
+margin-bottom: 50px;
+}
+.formulaire{
+	padding-right: 0 !important;
+}
+.pagecontact{
+	min-height: 750px;
+	background-repeat: no-repeat !important;
+    background: url("images/FontAccueil.png");
+	overflow-x: hidden !important;
+}
+
+.wp-block-contact-form-7-contact-form-selector{
+	background-color: #ffffff;
+	width: 70vw;
+	margin-top: 12%;
+	margin-bottom: 10% !important;
+	text-align: center;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+	font-family: 'Harriet Text Light Italic';
+	border:none;
+    border-bottom: 1px solid #c7c7c7;
+	width: 90%;
+	background: transparent;
+	outline-style: none;
+	/* margin-bottom: 40px; */
+}
+
+.message{
+	margin-top: 50px;
+}
+.margininput{
+	margin-top: 50px;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea{
+	font-family: 'Harriet Text Light Italic';
+	border:none;
+    border-bottom: 1px solid #c7c7c7;
+	background: transparent;
+	width: 90%;
+	outline-style: none;
+	margin-top: 50px;
+}
+
+
+input.wpcf7-form-control.wpcf7-submit{
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	background-color: #9ccfdb;
+	border-radius: 50px;
+	border:solid 1px #86b4cf;
+	text-shadow: none !important;
+	font-family: 'Harriet Text Light Italic';
+	font-size: 22px;
+	color: #ffffff;
+	padding: 8px;
+	padding-left: 18px;
+	padding-right: 18px;
+	cursor: pointer;
+	outline-style: none;
+}
+input.wpcf7-form-control.wpcf7-submit:focus{
+	outline-style: none;
+}
+input.wpcf7-form-control.wpcf7-submit:hover{
+	outline-style: none;
+	color: #9ccfdb;
+	background-color: #ffffff;
+}
+
+li#wpcf7-f32-o1-ve-your-name{
+	display: none;
+}
+li#wpcf7-f32-o1-ve-your-email{
+	display: none;
+}
+li#wpcf7-f32-o1-ve-tel-834{
+	display: none;
+}
+li#wpcf7-f32-o1-ve-your-subject{
+	display: none;
+}
+
+span.wpcf7-not-valid-tip{
+	float: left;
+	margin-left: 5%;
+	color: red;
+	align-items: flex-start !important;
+	font-size: 10px;
+	top: -20% !important;
+	position: relative;
+}
+
+.screen-reader-response{
+	color: red;
+	margin-top: 20px;
+	padding: 0 5% 0 5%;
+}
+
+.wpcf7-response-output{
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.wp-block-contact-form-7-contact-form-selector{
+		margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wp-block-contact-form-7-contact-form-selector{
+		margin-top: 25%;
+	}
+}
+@media screen and (max-width: 414px) {
+	.wp-block-contact-form-7-contact-form-selector{
+		margin-top: 55%;
+		padding-right: 5%;
+		width: 100%;	
+	}
+		
+}
+
+
+
+/* ==================================================================================== */
+/************************************ End Contact **************************************/
+/* ==================================================================================== */
+
+
 
 /* ==================================================================================== */
 /*************************************** Footer *****************************************/
@@ -1184,6 +1417,7 @@ font-family: 'ubuntulight';
 .basfoot{
 	color: #ffffff;
 	font-family: 'Harriet Text Light Italic';
+	
 }
 
 .textefooter{
@@ -1191,23 +1425,19 @@ font-family: 'ubuntulight';
 	font-family: 'Harriet Text Light Italic';
 }
 
+@media screen and (max-width: 414px) {
+	.blockfooter{
+		padding-top: 40%;
+		padding-left: 10px;
+	}
+		
+}
+
 /* ==================================================================================== */
 /************************************* End Footer ***************************************/
 /* ==================================================================================== */
 
 
-/* ==================================================================================== */
-/************************************* Panier ***************************************/
-/* ==================================================================================== */
-
-main#content{
-	margin-top: 500px !important;
-	
-}
-
-/* ==================================================================================== */
-/************************************* End Panier ***************************************/
-/* ==================================================================================== */
 
 
 

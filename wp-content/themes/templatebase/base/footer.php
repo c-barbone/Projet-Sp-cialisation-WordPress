@@ -16,11 +16,11 @@
 					<div class="col-lg-4">
 						<h4 class="titrefooter">Nos Réseaux sociaux:</h4>
 						<div class="col-12 d-flex justity-content-end">
-							<div class="facebook mx-4"><a target="_blank" href="https://www.facebook.com/"><i class="logofooter fab fa-facebook-f"></i></div>
-							<div class="instagram mr-4"><a target="_blank" href="https://www.instagram.com/?hl=fr"><i class="logofooter fab fa-instagram"></i></div>
-							<div class="twitter mr-4"><a target="_blank" href="https://twitter.com/?lang=fr"><i class="logofooter fab fa-twitter"></i></div>
-							<div class="linkedin mr-4"><a target="_blank" href="https://www.linkedin.com/in/camille-barbone/"><i class="logofooter fab fa-linkedin-in"></i></div>
-							<div class="vimeo mr-4"><a target="_blank" href="https://vimeo.com/fr"><i class="logofooter fab fa-vimeo-v"></i></div>
+							<div class="facebook mx-4"><a target="_blank" href="https://www.facebook.com/"><i class="logofooter fab fa-facebook-f"></i></a></div>
+							<div class="instagram mr-4"><a target="_blank" href="https://www.instagram.com/?hl=fr"><i class="logofooter fab fa-instagram"></i></a></div>
+							<div class="twitter mr-4"><a target="_blank" href="https://twitter.com/?lang=fr"><i class="logofooter fab fa-twitter"></i></a></div>
+							<div class="linkedin mr-4"><a target="_blank" href="https://www.linkedin.com/in/camille-barbone/"><i class="logofooter fab fa-linkedin-in"></i></a></div>
+							<div class="vimeo mr-4"><a target="_blank" href="https://vimeo.com/fr"><i class="logofooter fab fa-vimeo-v"></i></a></div>
 						</div>
 					</div>
 				</div>
