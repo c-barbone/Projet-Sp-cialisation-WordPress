@@ -1,0 +1,12 @@
+2021-02-25T08:55:53+00:00 CRITICAL syntax error, unexpected ''" src="'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\template_agence.php à la ligne 31
+
+2021-02-25T10:00:00+00:00 CRITICAL syntax error, unexpected '<', expecting end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\single.php à la ligne 35
+
+2021-02-25T13:36:31+00:00 CRITICAL syntax error, unexpected ',', expecting ')' dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\woocommerce\cart\cart.php à la ligne 72
+
+2021-02-25T21:25:49+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\woocommerce\checkout\form-billing.php à la ligne 26
+
+2021-02-25T21:52:37+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\woocommerce\checkout\form-shipping.php à la ligne 67
+
+2021-02-25T21:55:26+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file dans C:\wamp64\www\WordPress\wp-content\themes\templatebase\base\woocommerce\checkout\form-billing.php à la ligne 26
+

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="main single">
 <div class="container">
-<div class="row justify-content-center">
-<div class="col-6">
+<div class="row justify-content-center rowsingle">
+<div class="col-12">
 <div class="main single">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post();?>
@@ -30,9 +30,4 @@ if ( $post_type!='product' ) { ?>
 </div>
 </div>
 </div>
-
-<?php
-if ( $post_type!='product' ) {
-dynamic_sidebar( 'nouvelle-zone' );
-} ?>
 <?php get_footer(); ?>

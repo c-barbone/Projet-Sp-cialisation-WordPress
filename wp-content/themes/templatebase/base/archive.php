@@ -48,8 +48,4 @@ get_header(); ?>
     </div><!-- #content -->
 </div><!-- #primary -->
 
-<div id="sidebar-before-front-page" class="sidebar">
-
-    <?php dynamic_sidebar( 'nouvelle-zone' ); ?>
-</div>
 <?php get_footer(); ?>

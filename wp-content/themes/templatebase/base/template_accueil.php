@@ -63,7 +63,7 @@
       <div class="cr-titles">
         <?php
           for ($i=0; $i < count($slide); $i++){
-            echo "<h3><span>".$slide[$i]['titre_slider']."</span><span>".$slide[$i]['description_slider']."</span></h3>";
+            echo '<h3 class="titreslider"><span>'.$slide[$i]['titre_slider'].'</span><span>'.$slide[$i]['description_slider'].'</span></h3>';
           }
           ?>
 
